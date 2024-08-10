@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
-import "../styles/Table.css";
+import "../styles/table.css";
 
 const saveCompanies = (companies) => {
   try {
