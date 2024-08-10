@@ -1,0 +1,161 @@
+/* Table.css */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #f3f4f6;
+  color: #111827;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+.table-component {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.add-company-btn {
+  padding: 10px 20px;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.add-company-btn:hover {
+  background-color: #8eec9400;
+}
+
+.form-container {
+  margin-bottom: 20px;
+}
+
+form div {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #1f2937;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="time"],
+input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #d1d5db;
+  background-color: #f9fafb;
+  font-size: 16px;
+  color: #1f2937;
+}
+
+input[type="submit"],
+button {
+  padding: 10px 20px;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+}
+
+input[type="submit"]:hover,
+button:hover {
+  background-color: #2563eb;
+}
+
+button[type="button"] {
+  background-color: #10b981;
+  margin-left: 10px;
+}
+
+button[type="button"]:hover {
+  background-color: #059669;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+thead {
+  background-color: #1f2937;
+  color: white;
+}
+
+th,
+td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #d1d5db;
+}
+
+th {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+td {
+  font-size: 16px;
+  color: #374151;
+}
+
+tr:hover {
+  background-color: #f9fafb;
+}
+
+.expanded-row {
+  background-color: #f1f5f9;
+}
+
+.expanded-content {
+  padding: 10px;
+}
+
+.action-buttons {
+  margin-top: 10px;
+}
+
+.action-buttons button {
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .table-component {
+    padding: 10px;
+  }
+
+  .add-company-btn,
+  input[type="submit"],
+  button {
+    width: 100%;
+    margin-bottom: 10px;
+    color: rgb(215, 23, 245);
+    font-weight: 600;
+    background-color: transparent;
+  }
+}
